@@ -6,6 +6,14 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    width: {
+      '100': '100px',
+      '200': '200px',
+      '300': '300px',
+      '400': '400px',
+      '500': '500px',
+      '800': '800px',
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -14,5 +22,8 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  daisyui: {
+    themes: ["light", "dark", "synthwave"],
+  },
+  plugins: [require("daisyui")],
 }
